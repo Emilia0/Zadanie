@@ -1,0 +1,44 @@
+#bodyContainer  {
+    width:1700px ;
+    margin: auto;
+}
+#headerImage  {
+    background-image: url("../images/headerImage.jpg");
+    height: 592px;
+    }
+
+#phone  {
+    position: absolute;
+    height:711px;
+    top: 20px;
+    left:354px;
+    z-index: 100;
+}
+/*#logo   {*/
+    /*!*float:left;*!*/
+
+/*}*/
+/*#logo img   {*/
+    /*display: inline;*/
+/*}*/
+#headerBar  {
+    background-image: url("../images/headerBar.jpg");
+    height: 139px;
+}
+main    {
+    background-color: white;
+    height: 1121px;
+}
+#footerScroll   {
+    background-color: white;
+    background-image: url("../images/footerScroll.png");
+    height: 41px;
+}
+#footerMain {
+    background-image: url("../images/footerMain.jpg");
+    height: 346px;
+}
+#footerCredits  {
+    background-color: white;
+    height: 39px;
+}

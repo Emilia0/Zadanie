@@ -134,10 +134,6 @@
 
 }
 
-
-
-
-
 #socialMedia    {
     float:right;
     margin-right:385px;
@@ -160,6 +156,102 @@ main h2 {
     color:#212222 ;
     margin-top: 90px;
 }
+#circles    {
+    margin-left:360px;
+    margin-right:370px;
+    margin-top:29px;
+    height: 283px;
+    position: relative;
+    width: 1384px;
+}
+.circle {
+    float:left;
+    margin-right:32px;
+    padding-top:0;
+    margin-top: 34px;
+    width: 218px;
+    height: 218px;
+
+}
+
+.inside {
+    width: 218px;
+    height: 218px;
+    position:relative;
+    top:-220px;
+    text-align: center;
+    padding:0;
+}
+
+.inside *   {
+    display:inline-block;
+
+}
+.icon   {
+    margin-top:42px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.inside h3  {
+    margin-top:1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Oswald', sans-serif;
+    color:#1b1b1b;
+    font-size: 24px;
+}
+
+.inside h4  {
+    margin-top:15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Open Sans", sans-serif;
+    color:#1d1c1c;
+    font-size:16px;
+}
+
+.arrow  {
+    position:relative;
+    top: -345px;
+    right: -116px;
+    z-index: 99;
+}
+
+.circle:hover .inside h3    {
+    font-size: 28px;
+}
+
+.circle:hover  .inside h4   {
+    font-size:18px;
+}
+.circle:hover .icon   {
+    width:84px;
+    height:80px;
+}
+.circle:hover .blueRing {
+    display:none;
+}
+.yellowRing {
+    display:none;
+}
+.blueRing   {
+    z-index: 100;
+}
+.circle:hover .yellowRing   {
+    display:block;
+    position: relative;
+    top:-35px;
+    left:-32px;
+    z-index: 100;
+}
+.circle:hover .inside   {
+    top:-300px;
+}
+.circle:hover > .arrow  {
+    display:none;
+}
+
+
 #footerScroll   {
     background-color: white;
     background-image: url("../images/footerScroll.png");

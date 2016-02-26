@@ -213,8 +213,7 @@ main h2 {
 .arrow  {
     position:relative;
     top: -345px;
-    right: -116px;
-    z-index: 99;
+    right: -121px;
 }
 
 .circle:hover .inside h3    {
@@ -249,6 +248,20 @@ main h2 {
 }
 .circle:hover > .arrow  {
     display:none;
+}
+
+/*#firstCircle:hover #firstArrow   {*/
+    /*display: none;*/
+/*}*/
+#secondCircle:hover #firstArrow  {
+    display: none;
+}
+#thirdCircle:hover #secondArrow  {
+    display: none;
+}
+#fourthCircle:hover #thirdArrow   {
+    display: none;
+
 }
 
 

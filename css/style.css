@@ -193,6 +193,9 @@ main h2 {
     margin-top:42px;
     padding-left: 60px;
     padding-right: 60px;
+    width: 56px;
+    height: 53px;
+
 }
 .inside h3  {
     margin-top:1px;
@@ -201,6 +204,7 @@ main h2 {
     font-family: 'Oswald', sans-serif;
     color:#1b1b1b;
     font-size: 24px;
+
 }
 
 .inside h4  {
@@ -210,6 +214,7 @@ main h2 {
     font-family: "Open Sans", sans-serif;
     color:#1d1c1c;
     font-size:16px;
+
 }
 
 .arrow  {
@@ -220,20 +225,26 @@ main h2 {
 
 .circle:hover .inside h3    {
     font-size: 28px;
+    -webkit-transition: all 0.5s ease;
 }
 
 .circle:hover  .inside h4   {
     font-size:18px;
+    -webkit-transition: all 0.5s ease;
 }
 .circle:hover .icon   {
     width:84px;
     height:80px;
+    -webkit-transition: all 0.5s ease;
 }
 .circle:hover .blueRing {
     display:none;
+
 }
 .yellowRing {
-    display:none;
+   opacity:0;
+    position:absolute;
+    top:-30px;
 }
 .blueRing   {
     z-index: 100;
@@ -247,6 +258,9 @@ main h2 {
     background: white;
     height: 285px;
     width: 285px;
+    opacity:1;
+    -webkit-transition: all 0.5s ease;
+
 }
 .circle:hover .inside   {
     top:-300px;
@@ -346,11 +360,8 @@ main h2 {
 
 #footerCredits  {
     background-color: white;
-
-
 }
 #footerCredits p{
-    /*display: inline-block;*/
     padding-top:13px;
     padding-bottom:13px;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

@@ -181,10 +181,12 @@ main h2 {
     top:-220px;
     text-align: center;
     padding:0;
+    z-index:120;
 }
 
 .inside *   {
     display:inline-block;
+    z-index: 120;
 
 }
 .icon   {
@@ -213,7 +215,7 @@ main h2 {
 .arrow  {
     position:relative;
     top: -345px;
-    right: -121px;
+    right: -122px;
 }
 
 .circle:hover .inside h3    {
@@ -240,8 +242,11 @@ main h2 {
     display:block;
     position: relative;
     top:-35px;
-    left:-32px;
+    left:-33px;
     z-index: 100;
+    background: white;
+    height: 285px;
+    width: 285px;
 }
 .circle:hover .inside   {
     top:-300px;
@@ -249,21 +254,6 @@ main h2 {
 .circle:hover > .arrow  {
     display:none;
 }
-
-/*#firstCircle:hover #firstArrow   {*/
-    /*display: none;*/
-/*}*/
-#secondCircle:hover #firstArrow  {
-    display: none;
-}
-#thirdCircle:hover #secondArrow  {
-    display: none;
-}
-#fourthCircle:hover #thirdArrow   {
-    display: none;
-
-}
-
 
 #footerScroll   {
     background-color: white;

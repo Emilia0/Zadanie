@@ -1,7 +1,7 @@
+window.onload = function () {
+
 function getTimeRemaining(endtime)  {
     var timeLeft = endtime - Date.parse(new Date());
-    //var timeLeft = Date.parse(new Date()) - Date.parse(endtime);
-
     var seconds = Math.floor((timeLeft/1000) % 60);
     var minutes = Math.floor((timeLeft/1000/60) % 60);
     var hours = Math.floor( (timeLeft/(1000*60*60)) % 24 );
@@ -35,3 +35,55 @@ var deadline = d.setHours(24,0,0,0);
 
 startCounter('counter', deadline);
 
+function startRotator() {
+    var rotator = document.getElementById("rotator");
+    var images = rotator.getElementsByClassName("rotatorImage");
+    for (var i = 1; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    var counter = 1;
+
+    //setInterval(function () {
+    //    for (var i = 0; i < images.length; i++) {
+    //        images[i].style.display = "none";
+    //    }
+    //    images[counter].style.display = "block";
+    //    counter++;
+    //    if (counter == images.length) {
+    //        counter = 0;
+    //    }
+    //}, 3000);
+
+    var rotate = function() {
+
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            images[counter].style.display = "block";
+            counter++;
+            if (counter == images.length) {
+                counter = 0;
+            }
+        };
+    var intervalID = window.setInterval(rotate,3000);
+
+    //setInterval(rotate, 3000);
+
+    function stopRotator() {
+        window.clearInterval(intervalID);
+    }
+
+    function restartRotator()   {
+        window.setInterval(rotate,3000);
+    }
+
+    document.getElementById('leftArrow').addEventListener('mouseover', stopRotator);
+    document.getElementById('leftArrow').addEventListener('mouseout', restartRotator);
+
+    document.getElementById('rightArrow').addEventListener('mouseover', stopRotator);
+    document.getElementById('rightArrow').addEventListener('mouseout', restartRotator);
+
+
+}
+startRotator();
+};

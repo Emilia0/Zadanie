@@ -112,6 +112,7 @@
     height:34px;
 
 }
+
 .counterMiddle  {
     position:absolute;
     top:31px;
@@ -250,7 +251,7 @@ main h2 {
     height: 285px;
     width: 285px;
     opacity:1;
-    -webkit-transition: all 0.5s ease;
+    /*-webkit-transition: all 0.5s linear;*/
 
 }
 .circle:hover .inside   {
@@ -259,6 +260,72 @@ main h2 {
 .circle:hover > .arrow  {
     display:none;
 }
+#rotator    {
+    position: relative;
+    margin-left:360px;
+    margin-right:370px;
+    margin-top:128px;
+    height: 638px;
+}
+.rotatorImage   {
+    position: absolute;
+    width: 977px;
+    height: 492px;
+    line-height: 1.8;
+
+}
+
+.rotatorImage p{
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color:#2b2b2b;
+    text-align: left;
+    position:absolute;
+    top:150px;
+    left:600px;
+}
+
+#smallDots  {
+    position: absolute;
+    top:474px;
+    left:460px;
+
+}
+.bigDot {
+   position: absolute;
+    top: 473px;
+    z-index:200;
+    }
+#bigDot1    {
+     left:456px;
+ }
+#bigDot2    {
+    left:473px;
+}
+#bigDot3    {
+    left:490px;
+}
+#bigDot4    {
+    left:507px;
+}
+
+#bigDot5    {
+    left:524px;
+}
+
+.rotatorArrow   {
+    position: absolute;
+    top:208px;
+    z-index: 200;
+}
+#leftArrow  {
+    left:13px;
+}
+#rightArrow {
+    right:13px;
+}
+
 
 #footerScroll   {
     background-color: white;

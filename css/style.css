@@ -78,17 +78,8 @@
     display: block;
     width:80px;
 
+}
 
-}
-#counterHour    {
-    /*float: left;*/
-}
-#counterMinute    {
-    /*float: left;*/
-}
-#counterSecond    {
-    /*float: left;*/
-}
 
 .counterElement h3  {
     font-family: 'Oswald', sans-serif;

@@ -456,3 +456,176 @@ main h2 {
     margin-right: 370px;
 }
 
+@media screen and (max-width: 800px) {
+    #bodyContainer {
+        width: 100%;
+    }
+
+    #headerImage {
+        height: 450px;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #logo {
+        position: relative;
+        margin: auto;
+        left: auto;
+        top: 24px;
+        width: auto;
+        text-align: center;
+    }
+
+    #headerText {
+        position: relative;
+        left: auto;
+        top: 90px;
+        text-align: center;
+    }
+
+    #headerText h1 {
+        font-size: 50px;
+    }
+
+    #headerText h4 {
+        font-size: 19px;
+    }
+
+    #headerBar {
+        height: 220px;
+        background-size: cover;
+    }
+
+    #counter {
+        position: relative;
+        margin: auto;
+        float: none;
+        top: 20px;
+    }
+
+    #socialMedia {
+        float: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10px;
+        text-align: center;
+    }
+
+    main {
+        height: 1141px;
+    }
+
+    #circles {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        width: 590px;
+        height: 536px;
+        text-align: center;
+    }
+
+    .circle {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    #rotator {
+        margin: auto;
+        height: auto;
+        text-align: center;
+        width: 684px;
+    }
+
+    .rotatorImage {
+        position: relative;
+        height: 344px;;
+    }
+
+    .rotatorImage p {
+        font-size: 14px;
+        width: 400px;
+    }
+
+    #arrowContainer {
+        text-align: center;
+    }
+
+    .rotatorArrow {
+        position: absolute;
+        top: 470px;
+        display: inline-block;
+    }
+
+    #leftArrow {
+        left: 33%;
+    }
+
+    #rightArrow {
+        right: auto;
+        left: 44%
+    }
+
+    #smallDots {
+        display: none;
+    }
+
+    .bigDot {
+        display: none;
+    }
+
+    #scrollUp {
+        top: -41px;
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+
+    #scrollUp * {
+        display: inline-block;
+    }
+
+    #footerMain {
+        height: 600px;
+        background-size: cover;
+    }
+
+    #footerMain h2 {
+        margin-top: 0;
+    }
+
+    #footerLeftText {
+        position: relative;
+        top: 10px;
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #footerLeftText img {
+        display: inline-block;
+    }
+
+    #footerRightText {
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    #footerLeftText p {
+        font-size: 14px;
+    }
+
+    #footerRightText p {
+        font-size: 12px;
+    }
+
+    #creditsLeft, #creditsRight {
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+
+}

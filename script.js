@@ -25,7 +25,7 @@ window.onload = function () {
             minutesBox.innerHTML = ('0' + timeLeft.minutes).slice(-2);
             secondsBox.innerHTML = ('0' + timeLeft.seconds).slice(-2);
             if (timeLeft.total <= 0) {
-                clearInterval(timeinterval);
+                clearInterval(timeInterval);
                 setInterval(updateCounter, 1000)
             }
         }

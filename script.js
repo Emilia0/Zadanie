@@ -24,17 +24,21 @@ window.onload = function () {
             hoursBox.innerHTML = ('0' + timeLeft.hours).slice(-2);
             minutesBox.innerHTML = ('0' + timeLeft.minutes).slice(-2);
             secondsBox.innerHTML = ('0' + timeLeft.seconds).slice(-2);
+            if (timeLeft.total <= 0) {
+                clearInterval(timeinterval);
+                setInterval(updateCounter, 1000)
+            }
         }
 
         updateCounter();
         var timeInterval = setInterval(updateCounter, 1000);
-
     }
 
     var d = new Date();
     var deadline = d.setHours(24, 0, 0, 0);
 
     startCounter('counter', deadline);
+
 
     var rotator = document.getElementById("rotator");
     var images = rotator.getElementsByClassName("rotatorImage");
@@ -43,7 +47,7 @@ window.onload = function () {
     }
     var counter = 1;
 
-    var rotate = function () {
+    function rotate() {
 
         for (var i = 0; i < images.length; i++) {
             images[i].style.display = "none";
@@ -53,11 +57,22 @@ window.onload = function () {
         if (counter == images.length) {
             counter = 0;
         }
-    };
+    }
+
+    function rotateBack()   {
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+        images[counter - 1].style.display = "block";
+        counter--;
+        if (counter == 0) {
+            counter = images.length;
+        }
+    }
 
     var intervalID;
 
-    function restartRotator() {
+    function startRotator() {
         intervalID = window.setInterval(rotate, 3000);
     }
 
@@ -67,14 +82,15 @@ window.onload = function () {
     }
 
 
-
-    restartRotator();
+    startRotator();
 
     document.getElementById('leftArrow').addEventListener('mouseover', stopRotator);
-    document.getElementById('leftArrow').addEventListener('mouseout', restartRotator);
+    document.getElementById('leftArrow').addEventListener('mouseout', startRotator);
+    document.getElementById('leftArrow').addEventListener('click',rotateBack );
 
     document.getElementById('rightArrow').addEventListener('mouseover', stopRotator);
-    document.getElementById('rightArrow').addEventListener('mouseout', restartRotator);
+    document.getElementById('rightArrow').addEventListener('mouseout', startRotator);
+    document.getElementById('rightArrow').addEventListener('click', rotate);
 
 
 };
